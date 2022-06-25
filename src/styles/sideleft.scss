@@ -19,12 +19,12 @@ $space: 2rem;
     padding: $space;
     position: sticky;
     top: 0%;
-    z-index: 4;
+    z-index: 3;
     background-color: $dark;
   }
 
   &-body {
-    padding-bottom: $space * 2;
+    padding-bottom: $space;
 
     &-links {
       &-link {
@@ -35,6 +35,7 @@ $space: 2rem;
         align-items: center;
         color: white;
         text-decoration: none;
+        z-index: 2;
 
         &:hover {
           background-color: $darker;
@@ -64,6 +65,18 @@ $space: 2rem;
           position: absolute;
           right: 1rem;
         }
+      }
+
+      &-blur_circle {
+        position: absolute;
+        background-color: white;
+        filter: blur(3rem);
+        z-index: 1;
+        width: $mobile * 0.5;
+        height: $mobile * 0.5;
+        left: -40%;
+        bottom: -50%;
+        border-radius: 50%;
       }
     }
   }

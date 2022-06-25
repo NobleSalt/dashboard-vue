@@ -10,7 +10,9 @@
         <a href="#!" class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
           <span class="SideLeft-body-links-link-name">settings</span>
-          <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
+          <i class="SideLeft-body-links-link-right_icon"
+            ><ChevronRightIcon
+          /></i>
         </a>
         <a href="#!" class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><MessageSquareIcon /></i>
@@ -21,21 +23,27 @@
             <CloneRegular />
           </Icon>
           <span class="SideLeft-body-links-link-name">user managements</span>
-          <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
+          <i class="SideLeft-body-links-link-right_icon"
+            ><ChevronRightIcon
+          /></i>
         </a>
         <a href="#!" class="SideLeft-body-links-link">
-            <Icon class="SideLeft-body-links-link-icon">
-              <AddressCardRegular />
-            </Icon>
+          <Icon class="SideLeft-body-links-link-icon">
+            <AddressCardRegular />
+          </Icon>
           <span class="SideLeft-body-links-link-name"
             >contacts managements</span
           >
-          <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
+          <i class="SideLeft-body-links-link-right_icon"
+            ><ChevronRightIcon
+          /></i>
         </a>
         <a href="#!" class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
           <span class="SideLeft-body-links-link-name">departments</span>
-          <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
+          <i class="SideLeft-body-links-link-right_icon"
+            ><ChevronRightIcon
+          /></i>
         </a>
         <a href="#!" class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
@@ -64,6 +72,7 @@
         <a href="#!" class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
           <span class="SideLeft-body-links-link-name">conferencing</span>
+        <div class="SideLeft-body-links-blur_circle"></div>
         </a>
       </div>
     </div>
@@ -78,7 +87,7 @@ import {
   ChevronRightIcon
 } from '@vue-icons/feather';
 import { Icon } from '@vicons/utils';
-import { AddressCardRegular,CloneRegular } from '@vicons/fa';
+import { AddressCardRegular, CloneRegular } from '@vicons/fa';
 
 export default {
   components: {
@@ -88,7 +97,7 @@ export default {
     ChevronRightIcon,
     AddressCardRegular,
     Icon,
-    CloneRegular,
+    CloneRegular
   }
 };
 </script>
