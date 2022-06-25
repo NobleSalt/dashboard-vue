@@ -55,17 +55,6 @@ export default {
     return { image: image };
   },
   methods: {
-    handleCick({ target }) {
-      if (target.className) {
-        console.log(target);
-        if (target.className === 'SideRight-head-content-menu') {
-          console.log('hehe');
-        } else {
-          console.log('hoho');
-          this.$store.state.showMenu = false;
-        }
-      }
-    }
   }
 };
 </script>

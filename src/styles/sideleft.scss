@@ -38,6 +38,19 @@
       height: 3rem;
       margin-right: 1rem;
     }
+
+    &-close{
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: none;
+
+      @media (max-width:$mobile-size) {
+        display: block;
+      }
+    }
   }
 
   &-body {

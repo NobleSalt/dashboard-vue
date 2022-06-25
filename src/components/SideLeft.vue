@@ -3,6 +3,7 @@
     <div class="SideLeft-head">
       <img :src="image" class="SideLeft-head-icon" alt="" />
       360 coporation
+      <div class="SideLeft-head-close" @click="this.$store.state.showMenu = false">X</div>
     </div>
     <div class="SideLeft-body">
       <div class="SideLeft-body-links">
