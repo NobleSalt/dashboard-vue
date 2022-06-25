@@ -157,13 +157,17 @@ i {
   .desktop {
     display: none;
   }
-  .mobile {
-    display: block;
-  }
+
   .root {
     margin-bottom: 4rem;
   }
   .mp-2 {
     padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .mobile {
+    display: block;
   }
 }
