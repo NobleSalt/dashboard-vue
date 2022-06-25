@@ -3,4 +3,35 @@
 .Chat {
   padding: $space * 0.5;
   padding-right: $space;
+
+  &-head {
+    &-left {
+    }
+    &-right {
+      @extend .align-center;
+      background-color: $grey;
+      border-radius: $round-border-radius;
+      padding: $space * 0.25 $space * 0.5;
+      max-width: $mobile;
+      width: 100%;
+      font-weight: 600;
+      &-input {
+        border: none;
+        outline: none;
+        background-color: inherit;
+        padding-left: 0.5rem;
+        flex: 2;
+
+        &::placeholder {
+          text-transform: capitalize;
+          color: $dark;
+          font-weight: 600;
+        }
+      }
+
+      &-icon {
+        color: darken($color: $grey, $amount: 20);
+      }
+    }
+  }
 }
