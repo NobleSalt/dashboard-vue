@@ -41,6 +41,7 @@
       </div>
     </div>
     <SideRightMain/>
+    <Chat/>
   </div>
 </template>
 
@@ -48,9 +49,10 @@
 import { BellIcon, SearchIcon, MenuIcon } from '@vue-icons/feather';
 import image from '@/assets/man.png';
 import SideRightMain from './SideRightMain';
+import Chat from './Chat.vue';
 
 export default {
-  components: { BellIcon, SearchIcon, MenuIcon, SideRightMain },
+  components: { BellIcon, SearchIcon, MenuIcon, SideRightMain, Chat },
   data() {
     return { image: image };
   },
