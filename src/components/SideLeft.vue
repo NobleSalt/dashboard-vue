@@ -1,5 +1,5 @@
 <template>
-  <div class="SideLeft">
+  <div :class="this.$store.state.showMenu ? 'SideLeft active' : 'SideLeft'">
     <div class="SideLeft-head">360 coporation</div>
     <div class="SideLeft-body">
       <div class="SideLeft-body-links">

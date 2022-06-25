@@ -2,7 +2,7 @@
   <div class="SideRight">
     <div class="SideRight-head">
       <div class="SideRight-head-content">
-        <div class="SideRight-head-content-menu">
+        <div class="SideRight-head-content-menu" @click="this.$store.state.showMenu=!this.$store.state.showMenu">
           <MenuIcon />
         </div>
         <div class="SideRight-head-content-left">

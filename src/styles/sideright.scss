@@ -17,13 +17,14 @@
       flex: 2;
       align-items: center;
 
-      @media (max-width: 600px) {
+      @media (max-width: $mobile-size) {
         background-color: $dark;
       }
 
       &-menu {
         color: $grey;
-        @media (min-width: 600px) {
+        cursor: pointer;
+        @media (min-width: $mobile-size) {
           display: none;
         }
       }
@@ -38,7 +39,7 @@
         font-weight: 600;
         display: none;
 
-        @media (min-width: 600px) {
+        @media (min-width: $mobile-size) {
           display: flex;
         }
 
@@ -75,7 +76,7 @@
         &-name {
           margin-right: $space * 0.5;
 
-          @media (max-width: 600px) {
+          @media (max-width: $mobile-size) {
             color: $grey;
           }
         }
@@ -121,7 +122,7 @@
       &.mobile {
         display: none;
 
-        @media (max-width: 600px) {
+        @media (max-width: $mobile-size) {
           display: flex;
         }
       }
