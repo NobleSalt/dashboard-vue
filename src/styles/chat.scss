@@ -11,15 +11,17 @@
     @extend .align-center;
     justify-content: space-between;
     background-color: $grey;
-    padding: 1rem 0;
+    padding: 1rem;
     padding-right: 1rem;
     border-radius: 5px;
+    flex-wrap: wrap;
 
     &-left {
       @extend .align-center;
       color: $dark;
       font-weight: 600;
-      padding: 0 1rem;
+      padding: 1rem;
+      padding-left: 0;
       
       &-icon {
         font-size: 1.75rem;

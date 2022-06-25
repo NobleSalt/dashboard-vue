@@ -1,4 +1,5 @@
 @import '@/global';
+
 .circle {
   width: $space * 1.125;
   height: $space * 1.125;
@@ -11,6 +12,10 @@
   overflow-x: hidden;
 
   &-head {
+    position: sticky;
+    top: 0;
+    background-color: white;
+
     &-content {
       padding: $space * 0.5;
       padding-right: $space;
@@ -91,6 +96,11 @@
 
     .padding {
       padding: $space * 0.5;
+      display: none;
+
+      @media (max-width: $mobile-size) {
+        display: block;
+      }
     }
 
     &-out {
