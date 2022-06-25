@@ -2,7 +2,7 @@
   <div class="Chat">
     <div class="Chat-head">
       <div class="Chat-head-left">
-        <i class="Chat-head-left-icon">msg</i>
+        <i class="Chat-head-left-icon"><MessageSquareIcon /> </i>
         <span class="Chat-head-left-name">recent general feeds</span>
       </div>
       <div class="Chat-head-right">
@@ -94,10 +94,10 @@
 </template>
 
 <script>
-import { SearchIcon } from '@vue-icons/feather';
+import { SearchIcon, MessageSquareIcon } from '@vue-icons/feather';
 
 export default {
-  components: { SearchIcon }
+  components: { SearchIcon, MessageSquareIcon }
 };
 </script>
 
