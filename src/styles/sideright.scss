@@ -1,23 +1,104 @@
 @import '@/global';
+.circle {
+  width: $space * 1.125;
+  height: $space * 1.125;
+  border-radius: 50%;
+}
 
 .SideRight {
   width: 100%;
-  padding: $space * 0.5;
+  text-transform: capitalize;
 
   &-head {
-    display: flex;
-    justify-content: space-between;
-    flex: 2;
-    align-items: center;
+    &-content {
+      padding: $space * 0.5;
+      display: flex;
+      justify-content: space-between;
+      flex: 2;
+      align-items: center;
 
-    &-left {
+      @media (max-width: 600px) {
+        background-color: $dark;
+      }
+
+      &-menu {
+        color: $grey;
+        @media (min-width: 600px) {
+          display: none;
+        }
+      }
+
+      &-left {
+        @extend .align-center;
+        background-color: $grey;
+        border-radius: $round-border-radius;
+        padding: $space * 0.25 $space * 0.5;
+        max-width: $mobile;
+        width: 100%;
+        font-weight: 600;
+        display: none;
+
+        @media (min-width: 600px) {
+          display: flex;
+        }
+
+        &-input {
+          border: none;
+          outline: none;
+          background-color: inherit;
+          padding-left: 0.5rem;
+          flex: 2;
+
+          &::placeholder {
+            text-transform: capitalize;
+            color: $dark;
+            font-weight: 600;
+          }
+        }
+
+        &-icon {
+          color: darken($color: $grey, $amount: 20);
+        }
+      }
+
+      &-right {
+        @extend .align-center;
+
+        &-icon {
+          @extend .align-center;
+          @extend .circle;
+          justify-content: center;
+          background-color: $grey;
+          margin-right: $space * 0.5;
+        }
+
+        &-name {
+          margin-right: $space * 0.5;
+
+          @media (max-width: 600px) {
+            color: $grey;
+          }
+        }
+
+        &-img {
+          @extend .circle;
+        }
+      }
+    }
+
+    .padding {
+      padding: $space * 0.25;
+    }
+
+    &-out {
       @extend .align-center;
       background-color: $grey;
-      border-radius: $round-border-radius;
+      border-radius: $round-border-radius * 0.25;
       padding: $space * 0.25 $space * 0.5;
-      max-width: $mobile;
       width: 100%;
       font-weight: 600;
+      flex: 1;
+      margin-top: $space * 0.25;
 
       &-input {
         border: none;
@@ -36,10 +117,14 @@
       &-icon {
         color: darken($color: $grey, $amount: 20);
       }
-    }
 
-    &-right {
-      @extend .align-center;
+      &.mobile {
+        display: none;
+
+        @media (max-width: 600px) {
+          display: flex;
+        }
+      }
     }
   }
 }
