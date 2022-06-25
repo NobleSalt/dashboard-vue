@@ -2,7 +2,7 @@
   <div class="Chat">
     <div class="Chat-head">
       <div class="Chat-head-left">
-        <i class="Chat-head-left-icon"><MessageSquareIcon /> </i>
+        <Icon class="Chat-head-left-icon"><CommentAltRegular /> </Icon>
         <span class="Chat-head-left-name">recent general feeds</span>
       </div>
       <div class="Chat-head-right">
@@ -98,10 +98,12 @@
 
 <script>
 import { SearchIcon, MessageSquareIcon } from '@vue-icons/feather';
+import {Icon} from '@vicons/utils'
+import { CommentAltRegular} from '@vicons/fa'
 import man from '@/assets/man.png';
 
 export default {
-  components: { SearchIcon, MessageSquareIcon },
+  components: { SearchIcon, MessageSquareIcon ,Icon,CommentAltRegular},
   data () {
     return {
       man:man

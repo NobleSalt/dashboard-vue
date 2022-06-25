@@ -89,7 +89,9 @@
           <span class="SideLeft-body-links-link-name">messaging</span>
         </a>
         <a href="#!" class="SideLeft-body-links-link">
-          <Icon class="SideLeft-body-links-link-icon"><CloudSatelliteConfig /></Icon>
+          <Icon class="SideLeft-body-links-link-icon"
+            ><CloudSatelliteConfig
+          /></Icon>
           <span class="SideLeft-body-links-link-name">conferencing</span>
           <div class="SideLeft-body-links-blur_circle"></div>
         </a>
@@ -106,8 +108,12 @@ import {
   ChevronRightIcon
 } from '@vue-icons/feather';
 import { Icon } from '@vicons/utils';
-import {AddressCardRegular,CloneRegular,CommentAltRegular} from '@vicons/fa';
-import { LocationCompany,CloudSatelliteConfig } from '@vicons/carbon';
+import {
+  AddressCardRegular,
+  CloneRegular,
+  CommentAltRegular
+} from '@vicons/fa';
+import { LocationCompany, CloudSatelliteConfig } from '@vicons/carbon';
 import { DeploymentUnitOutlined } from '@vicons/antd';
 import { ConferenceRoom28Regular } from '@vicons/fluent';
 import { DiscountOutlined, MarkChatReadOutlined } from '@vicons/material';
