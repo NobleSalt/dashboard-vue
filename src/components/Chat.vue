@@ -6,12 +6,12 @@
         <i class="Chat-head-left-name">recent general feeds</i>
       </div>
       <div class="Chat-head-right">
-        <i class="SideRight-head-out-icon">
+        <i class="Chat-head-right-icon">
           <SearchIcon />
         </i>
         <input
           type="text"
-          class="SideRight-head-out-input"
+          class="Chat-head-right-input"
           placeholder="search..."
         />
       </div>
