@@ -40,7 +40,7 @@
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
             <img :src="man" alt="" class="Chat-lists-item-top-left-img" />
-            <div class="Chat-lists-item-top-left-name">moses olaniyi</div>
+            <div class="Chat-lists-item-top-left-name">juliet chinwere</div>
           </div>
           <div class="Chat-lists-item-top-right">
             Tue 24 May, 2022 04. 01:22
@@ -59,7 +59,7 @@
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
             <img :src="man" alt="" class="Chat-lists-item-top-left-img" />
-            <div class="Chat-lists-item-top-left-name">moses olaniyi</div>
+            <div class="Chat-lists-item-top-left-name">super admin</div>
           </div>
           <div class="Chat-lists-item-top-right">
             Tue 24 May, 2022 04. 01:22

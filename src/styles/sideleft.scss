@@ -14,9 +14,9 @@
   animation-duration: 600ms;
   
   @media (max-width: $mobile-size) {
-    animation-name: right_to_left;
     left: -$mobile;
     position: absolute;
+    animation-name: right_to_left;
 
     &.active {
       left: 0;
