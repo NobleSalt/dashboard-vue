@@ -1,0 +1,60 @@
+@import '@/global';
+$space: 2rem;
+
+.SideLeft {
+  max-width: $mobile;
+  width: 100%;
+  height: 100%;
+  background-color: $dark;
+  overflow-y: auto;
+  position: relative;
+  text-transform: capitalize;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-head {
+    color: white;
+    padding: $space * 1.5 $space;
+    position: sticky;
+    top: 0%;
+    z-index: 4;
+    background-color: $dark;
+  }
+
+  &-body {
+    padding-bottom: $space * 2;
+
+    &-links {
+      &-link {
+        &-name {
+          margin-left: 1rem;
+        }
+
+        padding: 1rem $space;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: white;
+
+        &:hover {
+          background-color: $darker;
+          color: $light;
+
+          &::before {
+            position: absolute;
+            content: '';
+            background-color: $light;
+            width: 3px;
+            height: 50%;
+            top: 25%;
+            left: 0;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
