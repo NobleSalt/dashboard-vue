@@ -10,6 +10,7 @@
         <div class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
           <span class="SideLeft-body-links-link-name">settings</span>
+          <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
         </div>
         <div class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><MessageSquareIcon /></i>
@@ -18,14 +19,19 @@
         <div class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
           <span class="SideLeft-body-links-link-name">user managements</span>
+          <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
         </div>
         <div class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
-          <span class="SideLeft-body-links-link-name">contacts managements</span>
+          <span class="SideLeft-body-links-link-name"
+            >contacts managements</span
+          >
+          <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
         </div>
         <div class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
           <span class="SideLeft-body-links-link-name">departments</span>
+          <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
         </div>
         <div class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
@@ -61,10 +67,10 @@
 </template>
 
 <script>
-import { SettingsIcon, GridIcon, MessageSquareIcon } from '@vue-icons/feather';
+import { SettingsIcon, GridIcon, MessageSquareIcon,ChevronRightIcon } from '@vue-icons/feather';
 
 export default {
-  components: { SettingsIcon, GridIcon, MessageSquareIcon }
+  components: { SettingsIcon, GridIcon, MessageSquareIcon,ChevronRightIcon }
 };
 </script>
 

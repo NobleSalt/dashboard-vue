@@ -16,7 +16,7 @@ $space: 2rem;
 
   &-head {
     color: white;
-    padding: $space * 1.5 $space;
+    padding: $space;
     position: sticky;
     top: 0%;
     z-index: 4;
@@ -28,10 +28,6 @@ $space: 2rem;
 
     &-links {
       &-link {
-        &-name {
-          margin-left: 1rem;
-        }
-
         padding: 1rem $space;
         cursor: pointer;
         position: relative;
@@ -50,9 +46,16 @@ $space: 2rem;
             width: 3px;
             height: 50%;
             top: 25%;
-            left: 0;
+            left: 0.0625rem;
             bottom: 0;
           }
+        }
+        &-name {
+          margin-left: 1rem;
+        }
+        &-right_icon {
+          position: absolute;
+          right: 1rem;
         }
       }
     }
