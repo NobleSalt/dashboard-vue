@@ -20,7 +20,7 @@
       <div class="Chat-lists-item">
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
-            <img src="" alt="" class="Chat-lists-item-top-left-img" />
+            <img :src="man" alt="" class="Chat-lists-item-top-left-img" />
             <div class="Chat-lists-item-top-left-name">moses olaniyi</div>
           </div>
           <div class="Chat-lists-item-top-right">
@@ -38,7 +38,7 @@
       <div class="Chat-lists-item">
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
-            <img src="" alt="" class="Chat-lists-item-top-left-img" />
+            <img :src="man" alt="" class="Chat-lists-item-top-left-img" />
             <div class="Chat-lists-item-top-left-name">moses olaniyi</div>
           </div>
           <div class="Chat-lists-item-top-right">
@@ -56,7 +56,7 @@
       <div class="Chat-lists-item">
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
-            <img src="" alt="" class="Chat-lists-item-top-left-img" />
+            <img :src="man" alt="" class="Chat-lists-item-top-left-img" />
             <div class="Chat-lists-item-top-left-name">moses olaniyi</div>
           </div>
           <div class="Chat-lists-item-top-right">
@@ -74,7 +74,7 @@
       <div class="Chat-lists-item">
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
-            <img src="" alt="" class="Chat-lists-item-top-left-img" />
+            <img :src="man" alt="" class="Chat-lists-item-top-left-img" />
             <div class="Chat-lists-item-top-left-name">moses olaniyi</div>
           </div>
           <div class="Chat-lists-item-top-right">
@@ -95,9 +95,15 @@
 
 <script>
 import { SearchIcon, MessageSquareIcon } from '@vue-icons/feather';
+import man from '@/assets/man.png';
 
 export default {
-  components: { SearchIcon, MessageSquareIcon }
+  components: { SearchIcon, MessageSquareIcon },
+  data () {
+    return {
+      man:man
+    }
+  }
 };
 </script>
 
