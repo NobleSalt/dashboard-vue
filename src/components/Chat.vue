@@ -35,6 +35,7 @@
           necessitatibus.
         </div>
       </div>
+      <hr>
       <div class="Chat-lists-item">
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
@@ -53,6 +54,7 @@
           necessitatibus.
         </div>
       </div>
+      <hr>
       <div class="Chat-lists-item">
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
@@ -71,6 +73,7 @@
           necessitatibus.
         </div>
       </div>
+      <hr>
       <div class="Chat-lists-item">
         <div class="Chat-lists-item-top">
           <div class="Chat-lists-item-top-left">
