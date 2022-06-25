@@ -52,7 +52,7 @@ $grey-bg-color: rgb(243, 244, 246/1);
 
 @keyframes left_to_right {
   from {
-    left: -420px;
+    left: -$mobile;
     top: 0px;
     opacity: 0;
   }
@@ -64,7 +64,7 @@ $grey-bg-color: rgb(243, 244, 246/1);
 
 @keyframes right_to_left {
   from {
-    right: -420px;
+    right: -$mobile;
     top: 0px;
     opacity: 0;
   }

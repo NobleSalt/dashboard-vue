@@ -9,8 +9,12 @@
   position: relative;
   text-transform: capitalize;
   z-index: 3;
-
+  transition: all 300ms ease-in-out;
+  animation-name: left_to_right;
+  animation-duration: 600ms;
+  
   @media (max-width: $mobile-size) {
+    animation-name: right_to_left;
     left: -$mobile;
     position: absolute;
 
