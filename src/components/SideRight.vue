@@ -5,7 +5,7 @@
         <i class="SideRight-head-left-icon">
           <SearchIcon />
         </i>
-        <input type="text" class="SideRight-head-left-input" />
+        <input type="text" class="SideRight-head-left-input" placeholder="search..." />
       </div>
 
       <div class="SideRight-head-right">
