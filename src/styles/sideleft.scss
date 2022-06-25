@@ -34,6 +34,7 @@ $space: 2rem;
         display: flex;
         align-items: center;
         color: white;
+        text-decoration: none;
 
         &:hover {
           background-color: $darker;
@@ -50,12 +51,13 @@ $space: 2rem;
             bottom: 0;
           }
         }
+
         &-name {
           margin-left: 1rem;
         }
 
         &-icon {
-          font-size: $space;
+          font-size: $space * 0.75;
         }
 
         &-right_icon {
