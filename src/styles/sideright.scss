@@ -8,10 +8,12 @@
 .SideRight {
   width: 100%;
   text-transform: capitalize;
+  overflow-x: hidden;
 
   &-head {
     &-content {
       padding: $space * 0.5;
+      padding-right: $space;
       display: flex;
       justify-content: space-between;
       flex: 2;
@@ -89,6 +91,7 @@
 
     .padding {
       padding: $space * 0.25;
+      // padding-right: $space;
     }
 
     &-out {

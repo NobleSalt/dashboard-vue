@@ -1,6 +1,9 @@
 <template>
   <div :class="this.$store.state.showMenu ? 'SideLeft active' : 'SideLeft'">
-    <div class="SideLeft-head">360 coporation</div>
+    <div class="SideLeft-head">
+      <img :src="image" class="SideLeft-head-icon" alt="" />
+      360 coporation
+    </div>
     <div class="SideLeft-body">
       <div class="SideLeft-body-links">
         <a href="#!" class="SideLeft-body-links-link">
@@ -88,6 +91,7 @@ import {
 } from '@vue-icons/feather';
 import { Icon } from '@vicons/utils';
 import { AddressCardRegular, CloneRegular } from '@vicons/fa';
+import image from '@/assets/360.png';
 
 export default {
   components: {
@@ -98,6 +102,11 @@ export default {
     AddressCardRegular,
     Icon,
     CloneRegular
+  },
+  data() {
+    return {
+      image: image
+    };
   }
 };
 </script>
