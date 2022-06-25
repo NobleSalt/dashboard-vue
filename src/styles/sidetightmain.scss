@@ -36,6 +36,33 @@
       padding: 3rem 2rem;
       display: flex;
       justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+
+      &::before,
+      &::after {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        content: '';
+        z-index: 1;
+        background-color: white;
+        border-radius: 50%;
+        filter: blur(87px);
+        // filter: blur(87px);
+      }
+
+      &::after {
+        top: 0;
+        left: -8.25rem;
+        background-color: #404690;
+      }
+
+      &::before {
+        left: -7.125rem;
+        top: -4.5rem;
+        background-color: #58a0df;
+      }
 
       @media (max-width: 1150px) {
         width: 50%;
