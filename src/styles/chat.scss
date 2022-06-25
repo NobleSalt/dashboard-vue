@@ -3,18 +3,35 @@
 .Chat {
   padding: $space * 0.5;
   padding-right: $space;
+  width: 50%;
+  @media (max-width: $mobile-size) {
+    width: 100%;
+  }
 
   &-head {
+    display: flex;
+    justify-content: space-between;
+
     &-left {
+      @extend .align-center;
+      color: $dark;
+      font-weight: 600;
+      &-icon{
+      }
+      &-name{
+      }
     }
+
     &-right {
       @extend .align-center;
       background-color: $grey;
-      border-radius: $round-border-radius;
-      padding: $space * 0.25 $space * 0.5;
+      border-radius: 10px;
+      height: 3rem;
+      padding: $space * 0.5 $space * 0.5;
       max-width: $mobile;
       width: 100%;
       font-weight: 600;
+
       &-input {
         border: none;
         outline: none;
