@@ -1,0 +1,27 @@
+@import '@/global';
+
+.SideRightMain {
+  padding: 0 $space * 0.5;
+
+  .cards {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    text-transform: capitalize;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @media (max-width: $mobile-size) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-card {
+      width: 100%;
+      background-color: $grey;
+      border-radius: 0.5rem;
+      padding: 3rem;
+    }
+  }
+}

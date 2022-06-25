@@ -40,15 +40,17 @@
         </div>
       </div>
     </div>
+    <SideRightMain/>
   </div>
 </template>
 
 <script>
 import { BellIcon, SearchIcon, MenuIcon } from '@vue-icons/feather';
 import image from '@/assets/man.png';
+import SideRightMain from './SideRightMain';
 
 export default {
-  components: { BellIcon, SearchIcon, MenuIcon },
+  components: { BellIcon, SearchIcon, MenuIcon, SideRightMain },
   data() {
     return { image: image };
   },
