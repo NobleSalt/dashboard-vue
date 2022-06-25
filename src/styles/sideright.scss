@@ -15,6 +15,7 @@
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 2;
 
     &-content {
       padding: $space * 0.5;
