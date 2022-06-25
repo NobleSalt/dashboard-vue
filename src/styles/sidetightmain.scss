@@ -48,20 +48,20 @@
         z-index: 1;
         background-color: white;
         border-radius: 50%;
-        filter: blur(87px);
         // filter: blur(87px);
       }
 
       &::after {
         top: 0;
         left: -8.25rem;
-        background-color: #404690;
+        background-color: lighten($color: #404690, $amount: 20);
+        z-index: 2;
       }
 
       &::before {
         left: -7.125rem;
         top: -4.5rem;
-        background-color: #58a0df;
+        background-color: lighten($color: #58a0df, $amount: 20);
       }
 
       @media (max-width: 1150px) {
