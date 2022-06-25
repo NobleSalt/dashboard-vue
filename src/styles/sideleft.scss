@@ -53,6 +53,11 @@ $space: 2rem;
         &-name {
           margin-left: 1rem;
         }
+
+        &-icon {
+          font-size: $space;
+        }
+
         &-right_icon {
           position: absolute;
           right: 1rem;

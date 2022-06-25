@@ -17,12 +17,16 @@
           <span class="SideLeft-body-links-link-name">feeds</span>
         </div>
         <div class="SideLeft-body-links-link">
-          <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
+          <Icon class="SideLeft-body-links-link-icon">
+            <CloneRegular />
+          </Icon>
           <span class="SideLeft-body-links-link-name">user managements</span>
           <i class="SideLeft-body-links-link-right_icon"><ChevronRightIcon /></i>
         </div>
         <div class="SideLeft-body-links-link">
-          <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
+            <Icon class="SideLeft-body-links-link-icon">
+              <AddressCardRegular />
+            </Icon>
           <span class="SideLeft-body-links-link-name"
             >contacts managements</span
           >
@@ -67,10 +71,25 @@
 </template>
 
 <script>
-import { SettingsIcon, GridIcon, MessageSquareIcon,ChevronRightIcon } from '@vue-icons/feather';
+import {
+  SettingsIcon,
+  GridIcon,
+  MessageSquareIcon,
+  ChevronRightIcon
+} from '@vue-icons/feather';
+import { Icon } from '@vicons/utils';
+import { AddressCardRegular,CloneRegular } from '@vicons/fa';
 
 export default {
-  components: { SettingsIcon, GridIcon, MessageSquareIcon,ChevronRightIcon }
+  components: {
+    SettingsIcon,
+    GridIcon,
+    MessageSquareIcon,
+    ChevronRightIcon,
+    AddressCardRegular,
+    Icon,
+    CloneRegular,
+  }
 };
 </script>
 
