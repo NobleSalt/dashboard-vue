@@ -16,11 +16,15 @@ $card-shadow: 0 0 white, 0 0 white, 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 $border-radius: 0.5rem;
 
 $mobile: 300px;
-$mobile-size: 500px;
+// $mobile-size: 600px;
+$mobile-size: 800px;
 
 $dark: #242966;
 $darker: #232759;
 $light: #58a0df;
+$space: 2rem;
+$grey: #f0f0f0;
+$round-border-radius: 35.5985px;
 
 $text-light: #58a0df;
 $text-dark: #242966;
@@ -28,6 +32,7 @@ $text-dark: #242966;
 .line-through {
   text-decoration: line-through;
 }
+
 $grey-color: rgb(75, 85, 99);
 
 $light-orange-color: rgb(249, 115, 22);
@@ -67,4 +72,9 @@ $grey-bg-color: rgb(243, 244, 246/1);
     right: 0px;
     top: 0px;
   }
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
 }

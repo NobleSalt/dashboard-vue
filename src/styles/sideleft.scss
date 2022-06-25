@@ -1,5 +1,4 @@
 @import '@/global';
-$space: 2rem;
 
 .SideLeft {
   max-width: $mobile;
@@ -9,6 +8,11 @@ $space: 2rem;
   overflow-y: auto;
   position: relative;
   text-transform: capitalize;
+
+  @media (max-width: $mobile-size) {
+    left: -$mobile;
+    position: absolute;
+  }
 
   &::-webkit-scrollbar {
     display: none;

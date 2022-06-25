@@ -1,0 +1,21 @@
+@import '@/global';
+
+.SideRight {
+  width: 100%;
+  padding: $space * 0.5;
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    align-items: center;
+
+    &-left {
+      @extend .align-center;
+    }
+
+    &-right {
+      @extend .align-center;
+    }
+  }
+}

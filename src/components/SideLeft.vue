@@ -72,7 +72,7 @@
         <a href="#!" class="SideLeft-body-links-link">
           <i class="SideLeft-body-links-link-icon"><SettingsIcon /></i>
           <span class="SideLeft-body-links-link-name">conferencing</span>
-        <div class="SideLeft-body-links-blur_circle"></div>
+          <div class="SideLeft-body-links-blur_circle"></div>
         </a>
       </div>
     </div>
