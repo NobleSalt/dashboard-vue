@@ -2,7 +2,10 @@
   <div class="SideRight">
     <div class="SideRight-head">
       <div class="SideRight-head-content">
-        <div class="SideRight-head-content-menu" @click="this.$store.state.showMenu=!this.$store.state.showMenu">
+        <div
+          class="SideRight-head-content-menu"
+          @click="this.$store.state.showMenu = true"
+        >
           <MenuIcon />
         </div>
         <div class="SideRight-head-content-left">
@@ -48,6 +51,19 @@ export default {
   components: { BellIcon, SearchIcon, MenuIcon },
   data() {
     return { image: image };
+  },
+  methods: {
+    handleCick({ target }) {
+      if (target.className) {
+        console.log(target);
+        if (target.className === 'SideRight-head-content-menu') {
+          console.log('hehe');
+        } else {
+          console.log('hoho');
+          this.$store.state.showMenu = false;
+        }
+      }
+    }
   }
 };
 </script>

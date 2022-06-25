@@ -8,7 +8,7 @@
   overflow-y: auto;
   position: relative;
   text-transform: capitalize;
-  z-index: 1;
+  z-index: 3;
 
   @media (max-width: $mobile-size) {
     left: -$mobile;

@@ -5,7 +5,16 @@ export default createStore({
     showMenu: false
   },
   getters: {},
-  mutations: {},
-  actions: {},
+  mutations: {
+    setMenu (state, value) {
+      consoe.log(value)
+      state.showMenu = value
+    }
+  },
+  actions: {
+    updateMenu ({ commit }, value) {
+      commit('setMenu', value)
+    }
+  },
   modules: {}
 });
