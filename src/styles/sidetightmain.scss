@@ -48,7 +48,9 @@
         z-index: 1;
         background-color: white;
         border-radius: 50%;
-        filter: blur(80px);
+transition:300ms ease;
+&:hover{
+        filter: blur(80px);}
       }
 
       &::after {
