@@ -39,8 +39,7 @@
       position: relative;
       overflow: hidden;
 transition:300ms ease;
-&:hover &::before,
-      &::after{
+&:hover::before,&:hover::after{
         filter: blur(80px);}
 
       &::before,
